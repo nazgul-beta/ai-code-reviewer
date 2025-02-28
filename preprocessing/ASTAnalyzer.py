@@ -24,8 +24,7 @@ class ASTLayer:
 
         #*now traverse the ast tree
         for node in ast.walk(self.tree):
-
-            #Let us know about the all FUNCTIONS present in this file. Yay!
+            
             if isinstance(node, ast.FunctionDef):
                 func_details = {
                     "node":node.name,
@@ -41,8 +40,7 @@ class ASTLayer:
                         "name":func_details["node"],
                         "docstring":func_details["docstring"]
                     })
-
-            #Let us know about the all CLASSES present in this file. Yay!
+            
             elif isinstance(node, ast.ClassDef):
                 #Add class details
                 methods=[
@@ -62,8 +60,7 @@ class ASTLayer:
                         "name": class_details["name"],
                         "docstring":class_details["docstring"]
                     })
-
-            #Let us know about the all IMPORTS present in this file. Yay!
+            
             elif isinstance(node, ast.Import):
 
                 for alias in node.names:
