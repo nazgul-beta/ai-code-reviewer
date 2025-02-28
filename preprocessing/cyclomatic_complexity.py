@@ -5,15 +5,12 @@ from radon.complexity import cc_visit
 
 class CodeRiskAnalyzer:
     def __init__(self, file_path, diff):
-/*************  ✨ Codeium Command ⭐  *************/
         """
         Initialize the CodeRiskAnalyzer with a file path and a diff string.
         The diff string is expected to be a unified diff format string.
         The high_risk_keywords list contains keywords that are considered to be
         high risk in terms of security, performance, and reliability.
-        """
-        
-/******  d519d8d2-5d66-4486-942e-ab2fb4f91628  *******/
+        """        
         self.file_path = file_path
         self.diff = diff
         self.high_risk_keywords=[

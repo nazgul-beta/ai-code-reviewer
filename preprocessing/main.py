@@ -2,7 +2,6 @@ from cyclomatic_complexity import CodeRiskAnalyzer
 from ASTAnalyzer import ASTLayer
 
 def prioritize_file(changed_files):
-/*************  ✨ Codeium Command ⭐  *************/
     """
     Prioritizes the given changed files based on risk and complexity.
 
@@ -15,7 +14,6 @@ def prioritize_file(changed_files):
               including risk and complexity scores. The files are sorted in 
               descending order based on risk and complexity.
     """
-/******  01065750-d7c0-4c9b-abe7-296dee5698ae  *******/
     prioritized_files = []
 
     for file_info in changed_files:
@@ -29,7 +27,6 @@ def prioritize_file(changed_files):
     return prioritized_files
 
 def augment_files(changed_files, top_files):
-/*************  ✨ Codeium Command ⭐  *************/
     """
     Augment the given changed files with risk, complexity, functions, classes, imports and docstrings information using CodeRiskAnalyzer and ASTLayer.
 
@@ -40,7 +37,6 @@ def augment_files(changed_files, top_files):
     Returns:
         list: List of dictionaries containing information about the changed files augmented with risk, complexity, functions, classes, imports and docstrings
     """
-/******  c6c6823a-87b6-4b5a-9b60-332e98f9dc4c  *******/
     prioritized_files = prioritize_file(changed_files)
 
     # Take top files based on risk(HOTSPOTS) for review & do analysis using AST
